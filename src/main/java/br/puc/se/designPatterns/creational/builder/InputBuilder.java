@@ -2,6 +2,7 @@ package br.puc.se.designPatterns.creational.builder;
 
 public interface InputBuilder<T> {
 
-	Input<T> build();
+    Input<T> build();
+    void fromResource(String resource);
 
 }

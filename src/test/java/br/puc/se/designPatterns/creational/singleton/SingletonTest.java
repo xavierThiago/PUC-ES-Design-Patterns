@@ -16,6 +16,7 @@ class SingletonTest {
 	@Test
 	void httpInputUsingResourceFileWithReplacementTest() {
 		MyCustomApplicationContext context = MyCustomApplicationContext.getInstance();
+                
 		assertThat(context)
 		  .isSameAs(MyCustomApplicationContext.getInstance());
 	}
@@ -28,6 +29,7 @@ class SingletonTest {
 		} catch (IllegalAccessException e) {
 			return;
 		}
+                
 		fail("cannot access the constructor by hand!");
 	}
 	

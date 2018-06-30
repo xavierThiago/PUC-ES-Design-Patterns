@@ -20,6 +20,7 @@ public class ResourceFileInput implements Input<String> {
 		}
 	}
 
+        @Override
 	public String getContent() {
 		return this.stringBuilder.toString();
 	}

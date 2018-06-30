@@ -14,10 +14,13 @@ public interface PrototypeUtils {
 
 	static List<UserTransaction> readLinesFromResource(String resourceFileName)
 			throws FileNotFoundException, IOException {
+            
 		ClassLoader classLoader = ClassLoader.getSystemClassLoader();
 		File propertyFile = new File(classLoader.getResource(resourceFileName).getFile());
-		try (InputStream inputFS = new FileInputStream(propertyFile)) {
+		
+                try (InputStream inputFS = new FileInputStream(propertyFile)) {
 			BufferedReader br = new BufferedReader(new InputStreamReader(inputFS));
+                        
 			return br.lines().map((line) -> {
 				return new UserTransaction(line);
 			}).collect(Collectors.toList());
