@@ -47,4 +47,9 @@ public class HttpInputBuilder implements InputBuilder<HttpInputConnection> {
 		return this;
 	}
 
+	@Override
+	public void fromResource(String resource) {
+		
+	}
+
 }

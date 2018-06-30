@@ -38,12 +38,4 @@ public class BlockChainTransactionLoader {
 		}
 		return new LinkedList<>();
 	}
-	
-	BlockChainTransactionLoader deepCopy() {
-        try {
-            return (BlockChainTransactionLoader) this.clone();
-        } catch (CloneNotSupportedException e) {
-            return null;
-        }
-    }
 }
