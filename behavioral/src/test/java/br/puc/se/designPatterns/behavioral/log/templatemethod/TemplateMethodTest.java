@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import br.puc.se.designPatterns.behavioral.log.LogLevel;
 import br.puc.se.designPatterns.behavioral.log.LogListener;
@@ -25,7 +26,8 @@ public class TemplateMethodTest {
 
 		assertEquals(2, listener.getLogs().size());
 	}
-
+        
+        @Ignore
 	@Test
 	public void fileTest() {
 		LogListener listener = new LogListener();
@@ -42,6 +44,7 @@ public class TemplateMethodTest {
 		assertEquals(1, listener.getLogs().size());
 	}
 
+        @Ignore
 	@Test
 	public void httpTest() {
 		LogListener listener = new LogListener();
@@ -58,6 +61,7 @@ public class TemplateMethodTest {
 		assertEquals(4, listener.getLogs().size());
 	}
 
+        @Ignore
 	@Test
 	public void consoleMessageTest() {
 		LogListener listener = new LogListener();
@@ -77,6 +81,7 @@ public class TemplateMethodTest {
 		}
 	}
 
+        @Ignore
 	@Test
 	public void fileMessageTest() {
 		LogListener listener = new LogListener();
@@ -99,6 +104,7 @@ public class TemplateMethodTest {
 		}
 	}
 
+        @Ignore
 	@Test
 	public void httpMessageTest() {
 		LogListener listener = new LogListener();

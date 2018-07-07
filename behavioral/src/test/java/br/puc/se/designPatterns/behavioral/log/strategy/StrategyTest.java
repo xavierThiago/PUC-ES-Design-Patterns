@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import br.puc.se.designPatterns.behavioral.log.LogLevel;
 import br.puc.se.designPatterns.behavioral.log.LogListener;
